@@ -1,0 +1,20 @@
+{
+  "name": "hnt-scriptz",
+  "version": "0.0.1",
+  "description": "helium network scriptz",
+  "scripts": {
+    "wallet": "node scripts/wallet.js",
+    "rescue": "node scripts/rescue.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@helium/crypto": "^3.24.0",
+    "@helium/http": "^3.36.1",
+    "@helium/transactions": "^3.34.0",
+    "bip39": "^3.0.4",
+    "ed25519-hd-key": "^1.2.0",
+    "inquirer": "^8.1.0"
+  }
+}
