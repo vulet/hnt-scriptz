@@ -8,7 +8,7 @@ A repository for Helium network related scripting, in case they are helpful. Use
 
 ## Usage
 
-`yarn wallet` - create a vanity address, or random wallet address.
+`yarn wallet` - Create a vanity address, or random wallet address.
 
-`yarn rescue` - view/send your balance using a Ledger recovery passphrase.
+`yarn rescue` - View/send your balance using a Ledger recovery passphrase. This should only be used if your Ledger has been destroyed and you wish to transfer your funds, without the means of another.
 
