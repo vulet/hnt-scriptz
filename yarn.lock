@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@helium/crypto@^3.24.0":
-  version "3.24.0"
-  resolved "https://registry.yarnpkg.com/@helium/crypto/-/crypto-3.24.0.tgz#5aa88945a0c646ae5f38e5bd8560a5fd18ee2157"
-  integrity sha512-XUk2oJOEPYx5LN+NyNw1Y/jhIum+NaZEeZLjvqNAtgEqgVlEkPKcZNc1vJwb7r1qftY92O6P0owRTC2vhexmUg==
+"@helium/crypto@^3.38.0":
+  version "3.38.0"
+  resolved "https://registry.yarnpkg.com/@helium/crypto/-/crypto-3.38.0.tgz#b321f9a42b0e6144eb2044f0d05f6874d731fa85"
+  integrity sha512-dvmVaeTsk+05nBhbeqqWu0nugCeCrdX9A61YNxNxnb5NWYW6cAuIOuzutgTjr3v4MxZPtLEVyH9g8eWTQuCsug==
   dependencies:
     bs58 "^4.0.1"
     create-hash "^1.2.0"
@@ -18,10 +18,10 @@
   dependencies:
     bignumber.js "^9.0.0"
 
-"@helium/http@^3.36.1":
-  version "3.36.1"
-  resolved "https://registry.yarnpkg.com/@helium/http/-/http-3.36.1.tgz#ead8a74cb67441702da648a058b6a89135a9cb3d"
-  integrity sha512-naT8TW+MPlLV533u4S8ynS1KMntxhPaKs0SKzhuB/oT83tHnXLO56PzAXHrYlwCck4Ww0WvynSTFJLPArgKPIQ==
+"@helium/http@^3.38.3":
+  version "3.38.3"
+  resolved "https://registry.yarnpkg.com/@helium/http/-/http-3.38.3.tgz#eb63cbb2c264a0e2381496c69e588171a921326f"
+  integrity sha512-6lot2oM/H7RpW+L+SBWj9nT1saIJU45TxLVonqprtsjAB453fPW0Bn+puZGrEBa/+qCiosdeebewUG+C014HcA==
   dependencies:
     "@helium/currency" "^3.25.1"
     axios "^0.21.1"
@@ -36,12 +36,12 @@
   dependencies:
     protobufjs "^6.8.9"
 
-"@helium/transactions@^3.34.0":
-  version "3.34.0"
-  resolved "https://registry.yarnpkg.com/@helium/transactions/-/transactions-3.34.0.tgz#2c568c2cbd67a8bf0e097d2f0e52f9270e6d8eac"
-  integrity sha512-7ICGl56FGQi8SllnbpTzpoGzQuy4NYMQMs2XjgxXXlcAVjt/y444+zBQ8OKhrUyr76a0PELFplNc/eidCiWJgQ==
+"@helium/transactions@^3.38.0":
+  version "3.38.0"
+  resolved "https://registry.yarnpkg.com/@helium/transactions/-/transactions-3.38.0.tgz#c3b36d0e744e61b14c7585feb3e144476c93e49c"
+  integrity sha512-nFOEYGk102a+levjrSQLr94Dj3PYe/vyZMD8g/xPKx98uV47m6b1yzUwhr/Mm5+iUAJcCPo1gT/6UUGBi0+XWg==
   dependencies:
-    "@helium/crypto" "^3.24.0"
+    "@helium/crypto" "^3.38.0"
     "@helium/proto" "^1.4.0"
     "@types/libsodium-wrappers" "^0.7.8"
     long "^4.0.0"

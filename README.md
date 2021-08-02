@@ -12,3 +12,4 @@ A repository for Helium network related scripting, in case they are helpful. Use
 
 `yarn rescue` - View/send your balance using a Ledger recovery passphrase. This should only be used if your Ledger has been destroyed and you wish to transfer your funds, without the means of another.
 
+`yarn missing` - Find a missing 12th or 24th bip39 word.
