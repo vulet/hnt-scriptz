@@ -5,6 +5,7 @@
   "scripts": {
     "wallet": "node scripts/wallet.js",
     "rescue": "node scripts/rescue.js",
+    "missing": "node scripts/missing.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

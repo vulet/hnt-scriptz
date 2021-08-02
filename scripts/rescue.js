@@ -38,7 +38,7 @@ async function pay(recipient, amount, mnemonic, optional, derivePath) {
 async function getAccount() {
   const questions = [
     { type: 'input', name: 'mnemonic', message: 'ledger rescue passphrase (example: radio invite ...)' },
-    { type: 'input', name: 'optional', message: 'optional passphrase (default: null)' },
+    { type: 'input', name: 'optional', message: 'optional passphrase (default: none)' },
     { type: 'input', name: 'derivePath', message: 'derivePath (default: m/44\'/904\'/0\'/0\'/0\')' },
   ];
   const opts = await inquirer.prompt(questions);
@@ -53,7 +53,7 @@ async function getAccount() {
 async function sendTxn() {
   const questions = [
     { type: 'input', name: 'mnemonic', message: 'ledger rescue mnemonic (example: radio invite life ... cabbage)' },
-    { type: 'input', name: 'optional', message: 'optional passphrase (default: null)' },
+    { type: 'input', name: 'optional', message: 'optional passphrase (default: none)' },
     { type: 'input', name: 'derivePath', message: 'derivePath (default: m/44\'/904\'/0\'/0\'/0\')' },
     { type: 'input', name: 'recipient', message: 'recipient wallet' },
     { type: 'input', name: 'amount', message: 'send amount' },

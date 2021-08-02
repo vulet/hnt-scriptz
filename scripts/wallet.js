@@ -1,4 +1,4 @@
-const Crypto = require('@helium/crypto');
+const { Keypair, Mnemonic, utils } = require('@helium/crypto');
 const inquirer = require('inquirer');
 const { log } = console;
 const ascii =
@@ -12,8 +12,8 @@ log(ascii);
 class Wallet {
   constructor() {
     return (async () => {
-      this.mnemonic = await Crypto.utils.randomBytes(16).then((entropy) => Crypto.Mnemonic.fromEntropy(entropy).words);
-      this.address = await Crypto.Keypair.fromWords(this.mnemonic).then((keypair) => keypair.address.b58);
+      this.mnemonic = await utils.randomBytes(16).then((entropy) => Mnemonic.fromEntropy(entropy).words);
+      this.address = await Keypair.fromWords(this.mnemonic).then((keypair) => keypair.address.b58);
       return this;
     })();
   }
