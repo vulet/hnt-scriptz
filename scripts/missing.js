@@ -22,13 +22,13 @@ async function findWord() {
     if (wordlist.indexOf(word) === -1) throw new Error(`Invalid word: ${word}`);
   });
   if (!Address.isValid(missing)) throw new Error(`Invalid address: ${missing}`);
-  for (let order = 0; order < (words.length + 2); order++) {
+  for (let order = 0; order < (words.length + 1); order++) {
     for (let i = 0; i < wordlist.length; i++) {
       words.splice(order, 0, wordlist[i]);
       const keypair = await Keypair.fromWords(words).catch(() => {});
       keypair ? address = keypair.address.b58 : address = [];
       if (address !== missing) {
-        words.splice(order, 2);
+        words.splice(order, 1);
       } else return log('\n', 'Address:', address, '\n', 'Words:', words);
     }
   }
